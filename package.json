@@ -1,0 +1,36 @@
+{
+  "name": "get-tile",
+  "version": "1.0.0",
+  "description": "Get a vector tile",
+  "main": "index.js",
+  "dependencies": {
+    "got": "^6.6.3",
+    "mbtiles": "^0.9.0",
+    "meow": "^3.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.12.2",
+    "eslint-plugin-node": "^3.0.5",
+    "nyc": "^10.0.0",
+    "opener": "^1.4.2",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.3"
+  },
+  "scripts": {
+    "test": "nyc tape test/*.test.js | tap-spec",
+    "coverage": "nyc --reporter html tape test/*.test.js && opener coverage/index.html"
+  },
+  "bin": {
+    "get-tile": "bin/get-tile.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/rclark/get-tile.git"
+  },
+  "author": "Ryan Clark",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rclark/get-tile/issues"
+  },
+  "homepage": "https://github.com/rclark/get-tile#readme"
+}
